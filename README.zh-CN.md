@@ -1,4 +1,4 @@
-# poly_15min_bot
+# poly_5min_bot
 
 [English](README.md) | **中文**
 
