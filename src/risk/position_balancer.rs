@@ -11,7 +11,7 @@ use tracing::{debug, error, info, warn};
 
 use super::positions::PositionTracker;
 use crate::config::Config as BotConfig;
-use poly_15min_bot::positions::get_positions;
+use poly_5min_bot::positions::get_positions;
 
 /// 仓位平衡器
 pub struct PositionBalancer {

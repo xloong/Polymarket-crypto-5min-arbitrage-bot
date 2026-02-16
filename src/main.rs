@@ -5,8 +5,8 @@ mod risk;
 mod trading;
 mod utils;
 
-use poly_15min_bot::merge;
-use poly_15min_bot::positions::{get_positions, Position};
+use poly_5min_bot::merge;
+use poly_5min_bot::positions::{get_positions, Position};
 
 use anyhow::Result;
 use dashmap::DashMap;
@@ -187,7 +187,7 @@ async fn main() -> Result<()> {
     tracing::info!("Polymarket 5分钟套利机器人启动");
 
     // 许可证校验：须存在有效 license.key，删除许可证将无法运行
-    poly_15min_bot::trial::check_license()?;
+    poly_5min_bot::trial::check_license()?;
 
     // 加载配置
     let config = Config::from_env()?;
